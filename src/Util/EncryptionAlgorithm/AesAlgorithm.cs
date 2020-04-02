@@ -33,7 +33,7 @@ namespace Util.EncryptionAlgorithm
         /// 加密
         /// </summary>
         /// <param name="argOriginal">原文</param>
-        /// <param name="argIV">初始向量，必须是16位字符，否则报错；如不填写，则使用默认值</param>
+        /// <param name="argIV">初始向量，如不填写，则使用默认值</param>
         /// <returns></returns>
         public static string Encrypt(string argOriginal, string argIV = null)
         {
@@ -55,7 +55,7 @@ namespace Util.EncryptionAlgorithm
         /// 解密
         /// </summary>
         /// <param name="argCipherText">密文</param>
-        /// <param name="argIV">初始向量，必须是16位字符，否则报错；如不填写，则使用默认值</param>
+        /// <param name="argIV">初始向量，如不填写，则使用默认值</param>
         /// <returns></returns>
         public static string Decrypt(string argCipherText, string argIV = null)
         {
